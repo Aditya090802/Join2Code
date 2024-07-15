@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.play-btn{
+    width:50px;
+    position: relative;
+    top:-50%;
+    right: -50%;
+    margin-left:20px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0;
+    color: green;
+}
+
+.col-md-4:hover .play-btn{
+    opacity: 1;
+}
+
+.modal-content{
+    background: transparent !important;
+    border: none !important;
+}
+
+
+.mb-0 > a {
+    display: block;
+    position: relative;
+  }
+  .mb-0 > a:after {
+    content: "\f078"; /* fa-chevron-down */
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 0;
+  }
+  .mb-0 > a[aria-expanded="true"]:after {
+    content: "\f077"; /* fa-chevron-up */
+  }

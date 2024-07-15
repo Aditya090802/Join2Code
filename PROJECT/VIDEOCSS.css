@@ -1,0 +1,289 @@
+#my-video {
+    positition: relative;
+    margin: -260px 80px;
+    width: 90%;
+    text-align: center;
+    height: 500px;
+    padding: 0%;
+    top: -220px;
+    bottom: 0;
+    transition: all 500ms linear;
+}
+
+#my-video.active {
+    margin: -260px 230px;
+    width: 80%;
+}
+
+.sidenav {
+    position: fixed;
+    background: #111;
+    margin-top: 45px;
+    width: 220px;
+    height: 500px;
+    text-align: center;
+}
+
+.sidenav a {
+    color: #75EF1A;
+    padding: 10px;
+    border-bottom: 3px solid #444;
+    font-family: Courier;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+foot {
+    overflow: hidden;
+}
+
+#sidebar {
+    position: relative;
+    width: 180px;
+    background: #151719;
+    height: 500px;
+    left: -180px;
+    margin-top: 30px;
+    text-align: center;
+    transition: all 500ms linear;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 190px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #000;
+    margin: 5px 0px;
+}
+
+#sidebar .text {
+    color: white;
+    font-size: 25px;
+    line-height: 66px;
+    text-align: center;
+    background: #1e1e1e;
+    letter-spacing: 1px;
+}
+
+#sidebar ul {
+    background: #1b1b1b;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#sidebar ul li {
+    line-height: 60px;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#sidebar ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 0;
+    s font-weight: 500;
+    text-align: left;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+#sidebar ul li a:hover {
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+}
+
+#sidebar ul ul {
+    position: static;
+    display: none;
+}
+
+#sidebar ul .feat-show.show {
+    display: block;
+}
+
+#sidebar ul ul li {
+    line-height: 42px;
+    border: bottom: none;
+}
+
+#sidebar ul ul li a {
+    font-size: 17px;
+    padding: 5px;
+    color: #e6e6e6;
+}
+
+#sidebar ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 100px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+
+#sidebar ul li a span.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#thumbnail {
+    border: 1px solid #ddd;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded border */
+    padding: 0px;
+    text-align: left;
+    /* Some padding */
+    /* Set a small width */
+}
+
+#thumbnail:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+/* Add a hover effect (blue shadow) */
+
+#adobe-dc-view {
+    display: none;
+}
+
+#adobe-dc-view.active {
+    display: block;
+    margin-top: 120px;
+}
+
+#quiz01 {
+    background-color: #413D3D;
+    text-align: center;
+    display: none;
+}
+
+#quiz01.active {
+    display: block;
+}
+
+.grid {
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border: 2px solid #cbcbcb;
+}
+
+.grid h1 {
+    font-family: "sans-serif";
+    background-color: #01BBFF;
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+}
+
+#score {
+    color: #01BBFF;
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid #question {
+    font-family: "monospace";
+    font-size: 30px;
+    color: #01BBFF;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+#btn0,
+#btn1,
+#btn2,
+#btn3 {
+    background-color: #75EF1A;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1D3C6A;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+
+#btn0:hover,
+#btn1:hover,
+#btn2:hover,
+#btn3:hover {
+    cursor: pointer;
+    background-color: #01BBFF;
+}
+
+#btn0:focus,
+#btn1:focus,
+#btn2:focus,
+#btn3:focus {
+    outline: 0;
+}
+
+#progress {
+    color: #2b2b2b;
+    font-size: 18px;
+}
+
+#duration {
+    margin-left: 30px;
+}
+
+#time01 {
+    position: fixed;
+    left: 30px;
+}

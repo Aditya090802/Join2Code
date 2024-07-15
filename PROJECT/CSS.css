@@ -1,0 +1,58 @@
+.header-img {
+    height: 9%;
+    width: 15%;
+}
+
+
+header h1 {
+    display: inline;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+#company
+{
+font-family:"Comic Sans MS", cursive, sans-serif;
+text-align:center;
+color:#006400;
+
+}
+
+#fixing
+{
+position:fixed;
+top:0;
+width:100%;
+opacity:1;
+}
+
+#courses
+{
+background-color:#90ee90 ;
+color:#013220
+font-weight: bold;
+
+}
+
+#heading
+{
+text-align:"center";
+color:#013220;
+background:#90ee90;
+font-weight:bold;
+}
+
+#contents
+{
+display:inline;
+
+}
+            
+#loader {
+                background: #fff url('loader.gif') no-repeat center center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 9999999;
+       }
